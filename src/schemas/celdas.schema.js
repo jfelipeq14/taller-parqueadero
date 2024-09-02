@@ -8,24 +8,21 @@ const celdasSchema = new Schema({
     default: { $inc: { numeroCelda: +1 } }
   },
   estado: {
-    type: Number,
-    required: true
+    type: Boolean,
+    default: true
   },
   placa: {
-    type: Number,
-    required: true
+    type: String,
+    maxlength: 6
   },
   ingreso: {
-    type: Number,
-    required: true
+    type: Date
   },
   salida: {
-    type: Number,
-    required: true
+    type: Date
   },
   pin: {
-    type: Number,
-    required: true
+    type: String
   }
 })
 
