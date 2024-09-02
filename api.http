@@ -1,27 +1,27 @@
 ### Recuperar todo
-GET http://localhost:3000/rutaApp/rutaRoute
+GET http://localhost:3000/celdas
 
-### Recuperar un dato por id
-GET http://localhost:3000/rutaApp/rutaRoute/id
+### Recuperar un dato por numeroCelda
+GET http://localhost:3000/celdas/numeroCelda
 
 
 ### Crear un dato con POST
-POST http://localhost:1234/rutaApp/rutaRoute
+POST http://localhost:3000/celdas
 Content-Type: application/json
 
 {
-  "sql": "SELECT * FROM table",
-  "name": "Nombre",
-  "state": true,
+  "placa": "MOO332",
+  "estado": false,
+  "numeroCelda": 3
 }
 
 ### Borrar un dato
-DELETE http://localhost:1234/rutaApp/rutaRoute/id
+DELETE http://localhost:3000/celdas/2
 
 ### Actualizar un dato
-PATCH http://localhost:1234/rutaApp/rutaRoute/id
+PATCH http://localhost:3000/celdas/2
 Content-Type: application/json
 
 {
-  "state": false
+  "estado": false
 }

@@ -6,18 +6,29 @@ export class CeldasModel {
     return data
   }
 
+  async getById (numeroCelda) {
+    const data = await CeldasSchema.findOne({ numeroCelda })
+    return data
+  }
+
+  async getAvailable () {
+    const data = await CeldasSchema.find({ estado: true })
+    return data
+  }
+
   async post (obj) {
-    const data = await CeldasSchema.create(obj)
+    // crear un documento en la coleccion
+    const data = await new CeldasSchema(obj).save()
     return data
   }
 
-  async put (id, obj) {
-    const data = await CeldasSchema.findOneAndUpdate(id, obj)
+  async patch (numeroCelda, obj) {
+    const data = await CeldasSchema.findOneAndUpdate({ numeroCelda }, obj, { new: true })
     return data
   }
 
-  async delete (id) {
-    const data = await CeldasSchema.findOneAndRemove(id)
+  async delete (numeroCelda) {
+    const data = await CeldasSchema.findOneAndDelete({ numeroCelda })
     return data
   }
 }

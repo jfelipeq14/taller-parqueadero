@@ -3,9 +3,8 @@ import { Schema, model } from 'mongoose'
 const celdasSchema = new Schema({
   numeroCelda: {
     type: Number,
-    unique: true,
-    required: true,
-    default: { $inc: { numeroCelda: +1 } }
+    unique: [true, 'El valor no puede ser repetido'],
+    default: 1
   },
   estado: {
     type: Boolean,
@@ -13,7 +12,7 @@ const celdasSchema = new Schema({
   },
   placa: {
     type: String,
-    maxlength: 6
+    maxlength: [6, 'La placa no puede ser mayor a 6 caracteres']
   },
   ingreso: {
     type: Date

@@ -8,8 +8,8 @@ export const createCeldasRouter = ({ celdasModel }) => {
 
   celdasRouter.get('/', celdasController.get)
   celdasRouter.post('/', celdasController.post)
-  celdasRouter.put('/:id', celdasController.put)
-  celdasRouter.delete('/:id', celdasController.delete)
+  celdasRouter.patch('/:numeroCelda', celdasController.patch)
+  celdasRouter.delete('/:numeroCelda', celdasController.delete)
 
   return celdasRouter
 }

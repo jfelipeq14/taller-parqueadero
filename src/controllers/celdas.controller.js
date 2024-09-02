@@ -8,18 +8,28 @@ export class CeldasController {
     res.status(200).json(data)
   }
 
+  getById = async (req, res) => {
+    const data = await this.celdasModel.getById(req.params.numeroCelda)
+    res.status(200).json(data)
+  }
+
+  getAvailable = async (req, res) => {
+    const data = await this.celdasModel.getAvailable()
+    res.status(200).json(data)
+  }
+
   post = async (req, res) => {
     const data = await this.celdasModel.post(req.body)
     res.status(201).json(data)
   }
 
-  put = async (req, res) => {
-    const data = await this.celdasModel.put(req.params.id, req.body)
+  patch = async (req, res) => {
+    const data = await this.celdasModel.patch(req.params.numeroCelda, req.body)
     res.status(200).json(data)
   }
 
   delete = async (req, res) => {
-    const data = await this.celdasModel.delete(req.params.id)
+    const data = await this.celdasModel.delete(req.params.numeroCelda)
     res.status(200).json(data)
   }
 }
