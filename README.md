@@ -1,8 +1,4 @@
-# Hermes - Backend
-
-Proyecto #Hermes para la agencia de viajes #ParcheTravels
-
-[Parche Travels](https://www.facebook.com/profile.php?id=61558957825128)
+# Parqueadero
 
 # Colaborar
 
@@ -15,15 +11,17 @@ Proyecto #Hermes para la agencia de viajes #ParcheTravels
 > Adicional (no requisito): [Github Copilot](https://youtu.be/cmg9Dlth_9k?si=w-txBeFj0WOOTnhV)
 >
 > Alternativa a copilot: [Codeium](https://codeium.com/)
+>
+> Prettier: [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ---
 
 - Crear fork del repositorio:
-[Hermes Backend](https://github.com/jfelipeq14/hermes-node)
+[Api](https://github.com/jfelipeq14/taller-parqueadero)
 
 - Clonar el repositorio (debe tener tu nombre de usuario:
 
-      git clone https://github.com/username/hermes-node
+      git clone https://github.com/username/taller-parqueadero
 
 - Instalar los paquetes necesarios (Primero revisa tu version de node: 20.16.0+):
 
@@ -58,10 +56,3 @@ Proyecto #Hermes para la agencia de viajes #ParcheTravels
       git checkout -b username/task
 
 - Repetir el proceso omitiendo la clonacion y la instalacion de los paquetes.
-
-## Hermesianos
-
-[Alan](https://github.com/Andrey0108)
-[Brayan](https://github.com/Bryan0813)
-[Camila](https://github.com/)
-[Felipe](https://github.com/jfelipeq14)
