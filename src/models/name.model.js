@@ -7,17 +7,17 @@ export class NameModel {
   }
 
   async post (obj) {
-    const data = await nameSchema.createOne(obj)
+    const data = await nameSchema.create(obj)
     return data
   }
 
   async put (id, obj) {
-    const data = await nameSchema.updateOne(id, obj)
+    const data = await nameSchema.findOneAndUpdate(id, obj)
     return data
   }
 
   async delete (id) {
-    const data = await nameSchema.deleteOne(id)
+    const data = await nameSchema.findOneAndRemove(id)
     return data
   }
 }
