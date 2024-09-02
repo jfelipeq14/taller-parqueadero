@@ -21,7 +21,7 @@
 
 - Clonar el repositorio (debe tener tu nombre de usuario:
 
-      git clone https://github.com/username/taller-parqueadero
+      git clone https://github.com/username/taller-parqueadero.git
 
 - Instalar los paquetes necesarios (Primero revisa tu version de node: 20.16.0+):
 
