@@ -1,7 +1,5 @@
 # Parqueadero
 
-# Colaborar
-
 ### Requisitos:
 
 > NodeJs: [NVM for Windows](https://youtu.be/xW3QUu_zhLo?si=cfQ8tgshPdUTfLz7)
