@@ -6,7 +6,6 @@ export class Server {
   constructor () {
     this.app = express()
     this.app.use(json())
-    this.app.disable('x-powered-by')
   }
 
   async dbConnection () {
