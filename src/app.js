@@ -2,15 +2,18 @@
 import { Server } from './models/server.js'
 
 // routes
-import { createNameRouter } from './routes/name.routes.js'
+import { createCeldasRouter } from './routes/celdas.routes.js'
 
 // models
-import { NameModel } from './models/name.model.js'
+import { CeldasModel } from './models/celdas.model.js'
 
 const server = new Server()
-const nameModel = new NameModel()
+const celdasModel = new CeldasModel()
 
-server.app.use('/name', createNameRouter({ nameModel }))
+server.app.get('/', (req, res) => {
+  res.send('Taller del parqueadero')
+})
+server.app.use('/celdas', createCeldasRouter({ celdasModel }))
 
 server.dbConnection()
 server.listen()
