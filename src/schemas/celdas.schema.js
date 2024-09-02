@@ -5,7 +5,7 @@ const celdasSchema = new Schema({
     type: Number,
     unique: true,
     required: true,
-    default: ''
+    default: { $inc: { numeroCelda: +1 } }
   },
   estado: {
     type: Number,
